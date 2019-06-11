@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Faster+One|Nothing+You+Could+Do|Press+Start+2P&display=swap');
+/* font-family: 'Faster One', cursive;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Nothing You Could Do', cursive; */
+
+#body {
+    background-color: aliceblue;
+}
+#navBar {
+    display: flex;
+    justify-content: center;
+    font-family: 'Faster One', cursive;
+    font-size: 80px;
+    background-image: url("/dice-png-28.png");
+    height: 100px;
+}
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+#playerType {
+    font-family: 'Faster One', cursive;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+#name {
+    font-family: 'Press Start 2P', cursive;
+}
+#instructions {
+    font-family: 'Nothing You Could Do', cursive;
+    text-align: center;
+}
+#gameContainer {
+    font-family: 'Press Start 2P', cursive;
+}
+#button {
+    background-color: yellowgreen;
+    border-style: groove;
+    border-width: 5px;
+    border-color: greenyellow;
+    border-radius: 10%;
+    height: 30px;
+}
+#winOrNo {
+    display: flex;
+    justify-content: center;
+    color: greenyellow;
+    font-size: 50px;
+}
