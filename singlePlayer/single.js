@@ -17,7 +17,25 @@ button.addEventListener('click', () => {
         winOrNo.innerHTML = "You Lose!"
         }
         
+        const diceImg = new Image();
+        diceImg = "../img/dice1.png"
 
+        const diceImage = () => {
+    
+            if (roll == 1) {
+                diceImg.src = ""
+            } else if (roll == 2) {
+                dice.innerHTML = "../img/dice2.png"
+            } else if (roll == 3) {
+                dice.innerHTML = "../img/dice3.png"
+            } else if (roll == 4) {
+                dice.innerHTML = "../img/dice4.png"
+            } else if (roll == 5) {
+                dice.innerHTML = "../img/dice5.png"
+            } else if (roll == 6) {
+                dice.innerHTML = "../img/dice6.png"
+            }
+        }
 });
 
 // //WORKINGPROGRESS
