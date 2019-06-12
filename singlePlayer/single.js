@@ -1,6 +1,8 @@
 let counter = 0;
-
 const button = document.getElementById('button');
+const nameSp = document.getElementById('spPlay');
+const name = document.getElementById('name');
+
 
 button.addEventListener('click', () => {
     let roll = Math.floor(Math.random() * 6) +1;
@@ -15,5 +17,9 @@ button.addEventListener('click', () => {
         winOrNo.innerHTML = "You Lose!"
     
 
+});
 
-})
+nameSp.addEventListener('click', () => {
+    let playerName = document.getElementById('spInput').textContent;
+    name.innerHTML = playerName.value;
+});

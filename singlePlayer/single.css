@@ -14,6 +14,10 @@ font-family: 'Nothing You Could Do', cursive; */
     background-image: url("/dice-png-28.png");
     height: 100px;
 }
+#home {
+    text-decoration: none;
+    color: inherit;
+}
 #intro {
     display: flex;
     flex-direction: column;
