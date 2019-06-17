@@ -5,6 +5,9 @@ font-family: 'Nothing You Could Do', cursive; */
 
 #body {
     background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #navBar {
     display: flex;
@@ -13,6 +16,7 @@ font-family: 'Nothing You Could Do', cursive; */
     font-size: 80px;
     background-image: url("/dice-png-28.png");
     height: 100px;
+    width: 100%;
 }
 #home {
     text-decoration: none;
@@ -39,6 +43,8 @@ font-family: 'Nothing You Could Do', cursive; */
 }
 #gameContainer {
     font-family: 'Press Start 2P', cursive;
+    display: inline-block;
+    align-items: center;
 }
 #button {
     background-color: yellowgreen;
@@ -53,4 +59,5 @@ font-family: 'Nothing You Could Do', cursive; */
     justify-content: center;
     color: greenyellow;
     font-size: 50px;
+    
 }

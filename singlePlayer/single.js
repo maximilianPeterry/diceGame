@@ -3,12 +3,28 @@ const button = document.getElementById('button');
 const nameSp = document.getElementById('spPlay');
 const name = document.getElementById('name');
 const dice = document.getElementById('dice');
+const winOrLose = document.getElementsByClassName('winOrLose');
+
 
 button.addEventListener('click', () => {
     let roll = Math.floor(Math.random() * 6) +1;
-    let winOrNo = document.getElementById('winOrNo')
+    let winOrNo = document.getElementById('winOrNo');
+    let currentScore = document.getElementById('currentScore')
     counter = counter + roll;
     console.log(roll)
+    if (roll == 1) {
+        theDice.src = "dice1.png"
+    } else if (roll == 2) {
+        theDice.src = "./dice2.png"
+    } else if (roll == 3) {
+            theDice.src = "./dice3.png"
+    } else if (roll == 4) {
+        theDice.src = "./dice4.png"
+    } else if (roll == 5) {
+        theDice.src = "./dice5.png"
+    } else if (roll == 6) {
+        theDice.src = "./dice6.png"
+}
 
     if (counter >= 20) {
         winOrNo.innerHTML = "You Win!"
@@ -17,44 +33,11 @@ button.addEventListener('click', () => {
         winOrNo.innerHTML = "You Lose!"
         }
         
-        const diceImg = new Image();
-        diceImg = "../img/dice1.png"
-
-        const diceImage = () => {
-    
-            if (roll == 1) {
-                diceImg.src = ""
-            } else if (roll == 2) {
-                dice.innerHTML = "../img/dice2.png"
-            } else if (roll == 3) {
-                dice.innerHTML = "../img/dice3.png"
-            } else if (roll == 4) {
-                dice.innerHTML = "../img/dice4.png"
-            } else if (roll == 5) {
-                dice.innerHTML = "../img/dice5.png"
-            } else if (roll == 6) {
-                dice.innerHTML = "../img/dice6.png"
-            }
+        if (counter >= 0) {
+            currentScore.innerHTML = counter;
         }
 });
 
-// //WORKINGPROGRESS
-// const diceImage = () => {
-    
-//     if (roll == 1) {
-//         dice.innerHTML = "<img src=\"
-//     } else if (roll == 2) {
-//         dice.src = "../img/dice2.png"
-//     } else if (roll == 3) {
-//         dice.src = "../img/dice3.png"
-//     } else if (roll == 4) {
-//         dice.src = "../img/dice4.png"
-//     } else if (roll == 5) {
-//         dice.src = "../img/dice5.png"
-//     } else if (roll == 6) {
-//         dice.src = "../img/dice6.png"
-//     }
-// }
 
 
 //problem below.
